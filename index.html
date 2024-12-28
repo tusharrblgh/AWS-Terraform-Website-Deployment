@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Bus Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book Ticket</a></li>
+                <li><a href="#">My Bookings</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search Your Bus</h2>
+            <form>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" placeholder="Enter Source">
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" placeholder="Enter Destination">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <button type="submit">Search Buses</button>
+            </form>
+        </section>
+
+        <section id="bus-results">
+            <h2>Available Buses</h2>
+            <div class="bus-result">
+                <h3>Bus Name: [Bus Name]</h3>
+                <p>Departure: [Departure Time]</p>
+                <p>Arrival: [Arrival Time]</p>
+                <p>Fare: ₹[Fare]</p>
+                <button>Book Now</button>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Bus Booking Website</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
